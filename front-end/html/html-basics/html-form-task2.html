@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM TASK 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        body {
+            background-color: grey;
+            height: 100vh;
+            padding: 5px 40px;
+        }
+
+        .heading-main {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 7px black;
+            padding-bottom: 10px;
+            font-family: 'Lobster';
+            font-stretch: expanded;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            max-height: 50px;
+            align-items: center;
+        }
+
+
+        .nav-items {
+            list-style-type: none;
+            padding: 28px;
+            display: flex;
+            gap: 10rem;
+
+        }
+
+        .nav-items li {
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+
+        .nav {
+            grid-area: header;
+            background-color: rgb(246, 136, 246);
+            padding: 20px;
+        }
+
+        .article {
+            grid-area: main;
+            background-color: white;
+            padding: 20px 50px;
+        }
+
+        .article h1 {
+            font-family: 'Lobster';
+        }
+
+        .aside {
+            grid-area: leftsidebar;
+            background-color: rgb(246, 136, 246);
+
+
+        }
+
+        .aside {
+            align-items: center;
+            padding: 25px;
+            max-width: 250px;
+
+        }
+
+        .aside h1 {
+            text-align: center;
+            padding-bottom: 5px;
+            font-family: 'Lobster';
+            font-stretch: ultra-expanded;
+            font-size: 28px;
+        }
+
+        .sec1 h2,
+        .sec2 h2 {
+            padding: 10px 0;
+            font-family: 'Lobster';
+
+        }
+
+        .aside-items {
+            align-items: center;
+            margin-left: 15px;
+        }
+
+        .aside-items li {
+            padding-top: 10px;
+
+        }
+
+        input {
+            border-color: transparent;
+            width: 200px;
+        }
+
+        #btn {
+            width: 70px;
+            background-color: black;
+            color: white;
+            margin-left: 5px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: white;
+            padding: 10px;
+            align-items: center;
+            display: flex;
+        }
+
+        .heading {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .header {
+            display: grid;
+            grid-template-areas: " header  header header header header"
+                                 " main  main main leftsidebar leftsidebar"
+                                 " footer  footer footer footer footer";
+            margin: 5px;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="heading-main">Header</h1>
+    <div class="header">
+        <nav class="nav">
+            <ul class="nav-items">
+                <li>HOME</li>
+                <li>OUR TEAM</li>
+                <li>PROJECTS</li>
+                <li>CONTACTS</li>
+            </ul>
+            <form action="" class="search">
+                <input type="text" placeholder="Search query" name="search" class="searchinp" />
+                <button id="btn" type="submit">Go!</button>
+            </form>
+        </nav>
+        <article class="article">
+            <div class="heading">
+                <h1>Article heading</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eos cupiditate debitis est eligendi
+                beatae dolor aperiam consectetur minima odio sint nostrum ratione hic omnis, fuga incidunt tempore.
+                Cupiditate, asperiores.</p>
+            <section class="sec1">
+                <h2>Subsection</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quod laborum, itaque expedita porro
+                    quas
+                    blanditiis est nemo possimus quisquam voluptate maiores fugiat corrupti, quo veritatis ipsam placeat
+                    adipisci aliquam.</p><br />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quod laborum, itaque expedita porro
+                    quas
+                    blanditiis est nemo possimus quisquam voluptate maiores fugiat corrupti, quo veritatis ipsam placeat
+                    adipisci aliquam.</p>
+            </section>
+            <section class="sec2">
+                <h2>Another Subsection</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quod laborum, itaque expedita porro
+                    quas
+                    blanditiis est nemo possimus quisquam voluptate maiores fugiat corrupti, quo veritatis ipsam placeat
+                    adipisci aliquam.</p><br />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quod laborum, itaque expedita porro
+                    quas
+                    blanditiis est nemo possimus quisquam voluptate maiores fugiat corrupti, quo veritatis ipsam placeat
+                    adipisci aliquam.</p>
+            </section>
+        </article>
+        <aside class="aside">
+            <h1>Related</h1>
+            <div class="aside-items">
+                <ul>
+                    <li><a href="#">Oh I do like to be beside the seaside</a></li>
+                    <li><a href="#">Oh I do like to be beside the sea</a></li>
+                    <li><a href="#">Although in the North of England</a></li>
+                    <li><a href="#">It never stops raining</a></li>
+                    <li><a href="#">Oh well...</a></li>
+                </ul>
+            </div>
+        </aside>
+        <footer class="footer">
+            &copy;Copyright 2050 by nobody. All rights reserved.</footer>
+        </div>
+</body>
+
+</html>
