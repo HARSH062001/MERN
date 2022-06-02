@@ -2,7 +2,7 @@
     min-height: 780px;
 }
 .registration_form{
-    max-width: 800px;
+    max-width: 900px;
     margin: 50px auto;
     position:relative;
     box-shadow: 0 10px 30px 0px rgba( 0, 0,0,0.1);
@@ -71,6 +71,13 @@
 .footer {
     position:sticky;
     background-color: red;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+}
+.adminfooter {
+    position:sticky;
+    background-color: green;
     padding: 10px;
     align-items: center;
     display: flex;
