@@ -19,7 +19,7 @@ input.empty {
     text-decoration: inherit;
   padding: 5px;
   font-size: 22px;
-  line-hight:24px;
+  line-height:24px;
   border:1px solid #ddd;
   border-radius:4px;
   
@@ -420,11 +420,12 @@ section{
     border-radius: none;
 }
 /* end news  */
-.cridet .box{
+.footer .box{
     padding: .1rem;
     text-align: center;
+    background-color: brown;
 }
-.cridet .box h3{
+.footer .box h3{
     font-size: 2rem;
 }
 
