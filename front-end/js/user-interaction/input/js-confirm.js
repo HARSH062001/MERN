@@ -1,4 +1,6 @@
-confirm("Do you want to turn on notifications for this page");
+confirm("Do you want to turn on notifications for this page?");
 
-let notificationOptInStatus = confirm("Do you want to turn on notifications for this page?");
-console.log("Notifications:" +notificationOptInStatus);
+let notificationOptInStatus = confirm(
+  "Do you want to turn on notifications for this page?"
+);
+console.log("Notifications: " + notificationOptInStatus);
